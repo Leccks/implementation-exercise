@@ -3,5 +3,6 @@ simple web application that allows you to create to-do items and folders to grou
 
 	default user/password = admin/admin
 	PHP < 5.5.0
+	Use localhost, user = "root", pass=""
 	MySQL 10.4.11-MariaDB
 	HTML5
