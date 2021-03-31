@@ -10,8 +10,6 @@ $conexion = new PDO($dsn);
 $query = "SHOW TABLES LIKE 'accounts'";
 $envio = $conexion->query($query);
 if($envio->num_rows == 0){
- $query = "create database implementation_exercise";
- $conexion->query($query);
  $query = "create table accounts(id integer NOT NULL AUTO_INCREMENT,username varchar(30), password varchar(40),admin bit,PRIMARY KEY(id))";
  $conexion->query($query);
  $query= "insert into accounts(username,password) values ('admin','admin')";
